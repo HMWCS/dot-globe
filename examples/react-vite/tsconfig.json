@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "paths": {
+      "@hmwcs/dot-globe": ["../../packages/dot-globe/src/index.ts"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}
