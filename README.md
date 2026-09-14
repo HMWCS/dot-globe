@@ -12,23 +12,11 @@ A React point-cloud Earth with bundled Natural Earth geography and no runtime ma
 
 ## Add to your React project
 
-The package is not published to npm yet. With Node.js 22.13+ and pnpm 11.16.0, create an installable archive:
-
 ```sh
-git clone https://github.com/HMWCS/dot-globe.git
-cd dot-globe
-pnpm install --frozen-lockfile
-pnpm --filter @hmwcs/dot-globe build
-pnpm --dir packages/dot-globe pack --pack-destination ../..
+npm install @hmwcs/dot-globe
 ```
 
-This creates `hmwcs-dot-globe-0.0.0.tgz` in the repository root. In your existing React project:
-
-```sh
-npm install /path/to/dot-globe/hmwcs-dot-globe-0.0.0.tgz
-```
-
-For pnpm, use `pnpm add` with the same archive path. Supported React versions: `^18.3.0 || ^19.0.0`.
+For a pnpm project, use `pnpm add @hmwcs/dot-globe`. React 18.3+ or 19 is required.
 
 ```tsx
 import { DotGlobe } from "@hmwcs/dot-globe";
@@ -48,7 +36,16 @@ See [advanced usage](packages/dot-globe/docs/usage.md) for city presets, coordin
 
 ## Run the demo locally
 
-After installing this repository's dependencies, run `pnpm dev` and open the printed URL. Drag or use arrow keys to rotate; controls select the view, quality, theme, and motion. Stop with `Ctrl+C`.
+Use Node.js 22.13+ and pnpm 11.16.0 for repository development:
+
+```sh
+git clone https://github.com/HMWCS/dot-globe.git
+cd dot-globe
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+Open the printed URL. Drag or use arrow keys to rotate; controls select view, quality, theme, and motion.
 
 ## Development
 

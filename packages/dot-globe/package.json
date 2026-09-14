@@ -1,8 +1,7 @@
 {
   "name": "@hmwcs/dot-globe",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "sideEffects": false,
   "files": [
@@ -30,5 +29,19 @@
   },
   "dependencies": {
     "three": "0.185.1"
+  },
+  "description": "A React point-cloud Earth with bundled Natural Earth geography.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMWCS/dot-globe.git",
+    "directory": "packages/dot-globe"
+  },
+  "homepage": "https://hmwcs.github.io/dot-globe/",
+  "bugs": {
+    "url": "https://github.com/HMWCS/dot-globe/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

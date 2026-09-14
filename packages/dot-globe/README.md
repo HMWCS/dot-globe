@@ -4,21 +4,11 @@ A React point-cloud Earth with bundled Natural Earth geography and no runtime ma
 
 ## Install
 
-This package is not published to npm. Build an archive from the [repository](https://github.com/HMWCS/dot-globe) root using Node.js 22.13+ and pnpm 11.16.0:
-
 ```sh
-pnpm install --frozen-lockfile
-pnpm --filter @hmwcs/dot-globe build
-pnpm --dir packages/dot-globe pack --pack-destination ../..
+npm install @hmwcs/dot-globe
 ```
 
-The archive is created in the repository root. In your existing React project:
-
-```sh
-npm install /path/to/dot-globe/hmwcs-dot-globe-0.0.0.tgz
-```
-
-Alternatively, use `pnpm add` with the same path. Supported React versions: `^18.3.0 || ^19.0.0`.
+For a pnpm project, use `pnpm add @hmwcs/dot-globe`. React 18.3+ or 19 is required.
 
 ## Use
 
